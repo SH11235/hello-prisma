@@ -6,7 +6,7 @@ https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relat
 - モジュールインストール
 
 ```sh
-npm install prisma typescript ts-node @types/node --save-dev
+npm install
 ```
 
 - PostgreSQL起動
@@ -19,6 +19,12 @@ docker-compose up -d
 
 ```sh
 psql -h localhost -p 15432 -U admin -d prisma
+```
+
+- schemaから型ファイル生成
+
+```sh
+npx prisma generate
 ```
 
 - Prismaからクエリ発行
