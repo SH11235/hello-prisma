@@ -21,6 +21,12 @@ docker-compose up -d
 psql -h localhost -p 15432 -U admin -d prisma
 ```
 
+- schemaから型ファイル生成
+
+```sh
+npx prisma generate
+```
+
 - Prismaからクエリ発行
 
 ```sh
